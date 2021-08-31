@@ -1,4 +1,5 @@
-import 'package:flutter/cupertino.dart';
+import 'package:ZeeSpot/theme.dart';
+import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -8,15 +9,22 @@ void main() {
 class ZeeSpot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'ZeeSpot',
-      debugShowCheckedModeBanner: false,
-      home: HomePage(),
+    return AdaptiveTheme(
+        light: kLightTheme,
+        dark: ThemeData.dark(),
+        initial: AdaptiveThemeMode.light,
+        builder: (light, dark) => MaterialApp(
+          theme: light,
+          darkTheme: dark,
+          title: 'ZeeSpot',
+          debugShowCheckedModeBanner: false,
+          home: LoginPage(),
+        ),
     );
   }
 }
 
-class HomePage extends StatelessWidget {
+class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,8 +36,7 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               Center(
                 child: Text(
-                  'ZeeSpot',
-                  style: TextStyle(fontSize: 35),
+                  'ZeeSpot', style: Theme.of(context).textTheme.headline6,
                 ),
               ),
               Container(
@@ -146,7 +153,7 @@ class _UserRegistrationState extends State<UserRegistration> {
       child: FloatingActionButton.extended(
         onPressed: () {},
         label: Text('Зарегистрироваься'),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Theme.of(context).primaryColor,
         foregroundColor: Colors.white,
       ),
     );
@@ -168,11 +175,15 @@ class _LoginWidgetState extends State<LoginWidget> {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Text("Уже есть аккаунт?"),
+          Text("Уже есть аккаунт?", style: TextStyle(
+            color: Colors.black,
+          ),),
           TextButton(
             onPressed: () {},
             child: Text("Войти"),
-            style: ButtonStyle(foregroundColor: MaterialStateProperty.all<Color>(Colors.black)),
+            style: ButtonStyle(
+                foregroundColor: MaterialStateProperty.all<Color>(
+                    Colors.black)),
           )
         ],
       ),
