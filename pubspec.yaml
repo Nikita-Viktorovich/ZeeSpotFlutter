@@ -56,6 +56,17 @@ flutter:
     - assets/icons/
     - assets/images/
 
+  fonts:
+    - family: Futura Hv BT
+      fonts:
+          - asset: assets/fonts/FUTURA_HEAVY_FONT.ttf
+
+    - family: Futura Bk BT
+      fonts:
+        - asset: assets/fonts/FUTURA_EXTRA_BLACK_FONT.ttf
+
+
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

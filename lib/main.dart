@@ -11,16 +11,16 @@ class ZeeSpot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AdaptiveTheme(
-        light: kLightTheme,
-        dark: ThemeData.dark(),
-        initial: AdaptiveThemeMode.light,
-        builder: (light, dark) => MaterialApp(
-          theme: light,
-          darkTheme: dark,
-          title: 'ZeeSpot',
-          debugShowCheckedModeBanner: false,
-          home: LoginPage(),
-        ),
+      light: kLightTheme,
+      dark: ThemeData.dark(),
+      initial: AdaptiveThemeMode.light,
+      builder: (light, dark) => MaterialApp(
+        theme: light,
+        darkTheme: dark,
+        title: 'ZeeSpot',
+        debugShowCheckedModeBanner: false,
+        home: LoginPage(),
+      ),
     );
   }
 }
@@ -35,16 +35,21 @@ class LoginPage extends StatelessWidget {
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Center(
+              Container(
+                alignment: Alignment.center,
+                width: 136,
+                height: 42,
                 child: Text(
-                  'ZeeSpot', style: Theme.of(context).textTheme.headline6,
+                  'ZeeSpot',
+                  style: Theme.of(context).textTheme.headline1,
                 ),
               ),
               Container(
-                alignment: Alignment.topRight,
+                margin: EdgeInsets.fromLTRB(0, 55, 0, 30),
+                alignment: Alignment.center,
                 child: Image.asset('assets/images/MotherNature.png'),
-                width: 350,
-                height: 350,
+                width: 310,
+                height: 240,
               ),
               LoginGoogleWidget(),
               LoginFacebookWidget(),
@@ -72,9 +77,11 @@ class _LoginGoogleState extends State<LoginGoogleWidget> {
       padding: EdgeInsets.zero,
       child: FloatingActionButton.extended(
         onPressed: () {},
-        label: Text('Продолжить через Google'),
-        backgroundColor: Colors.white,
-        foregroundColor: Colors.black,
+        label: Text(
+          'Продолжить через Google',
+          style: Theme.of(context).textTheme.headline4,
+        ),
+        backgroundColor: Theme.of(context).backgroundColor,
         icon: Image.asset(
           'assets/icons/Google.png',
           width: 35,
@@ -99,9 +106,11 @@ class _LoginFacebookState extends State<LoginFacebookWidget> {
       margin: EdgeInsets.fromLTRB(40, 20, 40, 0),
       child: FloatingActionButton.extended(
         onPressed: () {},
-        label: Text('Продолжить через Facebook'),
-        backgroundColor: Colors.white,
-        foregroundColor: Colors.black,
+        label: Text(
+          'Продолжить через Facebook',
+          style: Theme.of(context).textTheme.headline4,
+        ),
+        backgroundColor: Theme.of(context).backgroundColor,
         icon: Image.asset(
           'assets/icons/Facebook.png',
           height: 35,
@@ -126,13 +135,16 @@ class _LoginAppleState extends State<LoginAppleWidget> {
       margin: EdgeInsets.fromLTRB(40, 20, 40, 0),
       child: FloatingActionButton.extended(
         onPressed: () {},
-        label: Text('Продолжить через Apple'),
-        backgroundColor: Colors.white,
-        foregroundColor: Colors.black,
+        label: Text(
+          'Продолжить через Apple',
+          style: Theme.of(context).textTheme.headline4,
+        ),
+        backgroundColor: Theme.of(context).backgroundColor,
         icon: Image.asset(
           'assets/icons/Apple.png',
           height: 35,
           width: 35,
+          fit: BoxFit.fill,
         ),
       ),
     );
@@ -150,7 +162,7 @@ class _UserRegistrationState extends State<UserRegistration> {
     return Container(
       width: 335,
       height: 61,
-      margin: EdgeInsets.fromLTRB(40, 10, 40, 0),
+      margin: EdgeInsets.fromLTRB(40, 35, 40, 0),
       child: FloatingActionButton.extended(
         onPressed: () {},
         label: Text('Зарегистрироваься'),
@@ -170,23 +182,24 @@ class _LoginWidgetState extends State<LoginWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      alignment: AlignmentDirectional.center,
       width: 200,
-      height: 30,
-      margin: EdgeInsets.fromLTRB(0, 10, 0, 0),
+      height: 35,
+      margin: EdgeInsets.fromLTRB(0, 5, 0, 0),
       child: Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Text("Уже есть аккаунт?", style: TextStyle(
-            color: Colors.black,
-          ),),
+          Text("Уже есть аккаунт?",
+              style: Theme.of(context)
+                  .textTheme
+                  .headline4!
+                  .copyWith(color: Colors.grey)),
           TextButton(
             onPressed: () {},
-            child: Text("Войти"),
-            style: ButtonStyle(
-                foregroundColor: MaterialStateProperty.all<Color>(
-                    Colors.black)),
-          )
+            child: Text(
+              "Войти",
+              style: Theme.of(context).textTheme.headline4,
+            ),
+          ),
         ],
       ),
     );
