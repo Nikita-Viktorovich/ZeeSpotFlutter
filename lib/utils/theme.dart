@@ -6,7 +6,7 @@ final kLightTheme = ThemeData.light().copyWith(
   textTheme: TextTheme(
     headline6: TextStyle(
       color: Colors.black,
-      fontSize: 30.0,
+      fontSize: 35.0,
     )
   ),
 );

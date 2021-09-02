@@ -1,5 +1,6 @@
-import 'package:ZeeSpot/theme.dart';
+import 'package:ZeeSpot/utils/theme.dart';
 import 'package:adaptive_theme/adaptive_theme.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -75,7 +76,7 @@ class _LoginGoogleState extends State<LoginGoogleWidget> {
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
         icon: Image.asset(
-          'assets/images/Google.png',
+          'assets/icons/Google.png',
           width: 35,
           height: 35,
         ),
@@ -102,7 +103,7 @@ class _LoginFacebookState extends State<LoginFacebookWidget> {
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
         icon: Image.asset(
-          'assets/images/Facebook.png',
+          'assets/icons/Facebook.png',
           height: 35,
           width: 35,
         ),
@@ -129,7 +130,7 @@ class _LoginAppleState extends State<LoginAppleWidget> {
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
         icon: Image.asset(
-          'assets/images/Apple.png',
+          'assets/icons/Apple.png',
           height: 35,
           width: 35,
         ),
@@ -169,6 +170,7 @@ class _LoginWidgetState extends State<LoginWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      alignment: AlignmentDirectional.center,
       width: 200,
       height: 30,
       margin: EdgeInsets.fromLTRB(0, 10, 0, 0),
