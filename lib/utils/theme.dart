@@ -1,3 +1,4 @@
+import 'package:ZeeSpot/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 final kLightTheme = ThemeData.light().copyWith(
@@ -6,12 +7,12 @@ final kLightTheme = ThemeData.light().copyWith(
     backgroundColor: Colors.white,
     textTheme: TextTheme(
       headline4: TextStyle(
-        fontFamily: 'Futura Bk BT',
+        fontFamily: futuraBkBT,
         fontSize: 14.0,
         color: Colors.black,
       ),
       headline1: TextStyle(
-        fontFamily: 'Futura Hv BT',
+        fontFamily: futuraHvBt,
         color: Colors.black,
         fontSize: 35.0,
       ),

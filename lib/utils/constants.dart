@@ -9,3 +9,12 @@
 
 
         */
+
+import 'package:flutter/material.dart';
+
+const String futuraBkBT = "Futura Bk BT";
+const String futuraHvBt = "Futura Hv BT";
+const String futuraLtBt = "Futura Lt BT";
+
+final Color kForegroundColor = Color(0xFFF1EAD7);
+final Color kForegroundGreyColor = Color.fromRGBO(0, 0, 0, 0.5);

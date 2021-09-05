@@ -59,11 +59,15 @@ flutter:
   fonts:
     - family: Futura Hv BT
       fonts:
-          - asset: assets/fonts/FUTURA_HEAVY_FONT.ttf
+        - asset: assets/fonts/FUTURA_HEAVY_FONT.ttf
 
     - family: Futura Bk BT
       fonts:
-        - asset: assets/fonts/FUTURA_EXTRA_BLACK_FONT.ttf
+        - asset: assets/fonts/FUTURA_BOOK_FONT.ttf
+
+    - family: Futura Lt BT
+      fonts:
+        - asset: assets/fonts/FUTURA_LIGHT_BT.ttf
 
 
 
