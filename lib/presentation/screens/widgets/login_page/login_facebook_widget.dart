@@ -30,6 +30,9 @@ class _LoginFacebookState extends State<LoginFacebookWidget> {
           height: 35,
           width: 35,
         ),
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(20.0))
+        ),
       ),
     );
   }

@@ -9,30 +9,23 @@ class _LoginGoogleState extends State<LoginGoogleWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 335,
+      width: 96,
       height: 61,
-      margin: EdgeInsets.fromLTRB(40, 0, 40, 0),
+      margin: EdgeInsets.fromLTRB(26, 30, 0, 0),
       padding: EdgeInsets.zero,
-      child: FloatingActionButton.extended(
-        heroTag: "next1",
+      child: FloatingActionButton(
+        heroTag: "next4",
         onPressed: () {},
-        label: Text(
-          'Продолжить через Google',
-          style: Theme
-              .of(context)
-              .textTheme
-              .headline4,
-        ),
         backgroundColor: Theme
             .of(context)
             .backgroundColor,
-        icon: Image.asset(
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(20.0))
+        ),
+        child: Image.asset(
           'assets/icons/Google.png',
           width: 35,
           height: 35,
-        ),
-        shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(20.0))
         ),
       ),
     );

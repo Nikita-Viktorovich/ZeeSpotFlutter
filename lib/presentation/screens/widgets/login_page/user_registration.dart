@@ -25,6 +25,9 @@ class _UserRegistrationState extends State<UserRegistration> {
         backgroundColor: Theme
             .of(context)
             .primaryColor,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(20.0))
+        ),
       ),
     );
   }
