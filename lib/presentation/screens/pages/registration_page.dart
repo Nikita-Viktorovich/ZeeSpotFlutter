@@ -1,5 +1,4 @@
-import 'package:ZeeSpot/main.dart';
-import 'package:ZeeSpot/utils/constants.dart';
+import 'package:ZeeSpot/presentation/screens/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
 class RegistrationPage extends StatelessWidget {

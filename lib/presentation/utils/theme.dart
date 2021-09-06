@@ -1,4 +1,4 @@
-import 'package:ZeeSpot/utils/constants.dart';
+import 'package:ZeeSpot/presentation/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 final kLightTheme = ThemeData.light().copyWith(
