@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 
-class LoginGoogleWidget extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() => _LoginGoogleState();
-}
-
-class _LoginGoogleState extends State<LoginGoogleWidget> {
+class LoginGoogleWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -13,7 +8,18 @@ class _LoginGoogleState extends State<LoginGoogleWidget> {
       height: 61,
       margin: EdgeInsets.fromLTRB(40, 0, 40, 0),
       padding: EdgeInsets.zero,
+      decoration: BoxDecoration(
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.15),
+            spreadRadius: 0,
+            blurRadius: 24,
+            offset: Offset(0, 8), // changes position of shadow
+          ),
+        ],
+      ),
       child: FloatingActionButton.extended(
+        elevation: 0,
         heroTag: "next1",
         onPressed: () {},
         label: Text(

@@ -2,6 +2,8 @@ import 'package:ZeeSpot/presentation/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 final kLightTheme = ThemeData.light().copyWith(
+    brightness: Brightness.dark,
+    appBarTheme: ThemeData.light().appBarTheme,
     primaryColor: Color(0xFF9998CF),
     accentColor: Colors.black,
     backgroundColor: Colors.white,

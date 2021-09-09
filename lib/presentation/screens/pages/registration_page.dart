@@ -1,10 +1,12 @@
-import 'package:ZeeSpot/presentation/screens/pages/login_page.dart';
+import 'package:ZeeSpot/presentation/screens/widgets/registration_page/input_name.dart';
 import 'package:ZeeSpot/presentation/screens/widgets/registration_page/login_apple_widget.dart';
 import 'package:ZeeSpot/presentation/screens/widgets/registration_page/login_facebook_widget.dart';
 import 'package:ZeeSpot/presentation/screens/widgets/registration_page/login_google_widget.dart';
 import 'package:ZeeSpot/presentation/utils/constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import 'login_page.dart';
 
 class RegistrationPage extends StatelessWidget {
   @override
@@ -28,7 +30,8 @@ class RegistrationPage extends StatelessWidget {
                           return LoginPage();
                         }));
                       },
-                      icon: Icon(IconData(62832, fontFamily: 'MaterialIcons')),
+                      icon: Icon(Icons.arrow_back_ios),
+
                     ),
                   ),
                   Container(
@@ -74,7 +77,7 @@ class RegistrationPage extends StatelessWidget {
                       .copyWith(fontFamily: futuraLtBt),
                 ),
               ),
-
+              InputNameWidget(),
             ],
           ),
         ));

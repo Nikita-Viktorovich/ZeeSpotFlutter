@@ -9,6 +9,7 @@ void main() {
 }
 
 class ZeeSpot extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return AdaptiveTheme(

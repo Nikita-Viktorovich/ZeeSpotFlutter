@@ -36,6 +36,7 @@ class LoginPage extends StatelessWidget {
                 width: 310,
                 height: 240,
               ),
+              //LoginGoogleWidget(),
               LoginGoogleWidget(),
               LoginFacebookWidget(),
               LoginAppleWidget(),
@@ -46,3 +47,10 @@ class LoginPage extends StatelessWidget {
     );
   }
 }
+
+/* SVG картинки
+* stateless виджеты
+* файл с константами для отуступов
+* убрать размеры контейнеров и оставить отступы
+* сочетания клавиш
+* */

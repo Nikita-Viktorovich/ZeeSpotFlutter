@@ -1,14 +1,7 @@
-
-import 'package:ZeeSpot/presentation/screens/pages/registration_page.dart';
 import 'package:ZeeSpot/presentation/utils/constants.dart';
 import 'package:flutter/material.dart';
 
-class LoginWidget extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() => _LoginWidgetState();
-}
-
-class _LoginWidgetState extends State<LoginWidget> {
+class LoginWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -24,13 +17,9 @@ class _LoginWidgetState extends State<LoginWidget> {
                     .textTheme
                     .headline4!
                     .copyWith(color: kForegroundGreyColor)),
+            SizedBox(width: 10.0),
             TextButton(
-
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return RegistrationPage();
-                }));
-              },
+              onPressed: () {},
               child: Text(
                 "Войти",
                 style: Theme

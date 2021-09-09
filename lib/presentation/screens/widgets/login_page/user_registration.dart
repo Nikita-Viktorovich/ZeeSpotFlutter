@@ -1,13 +1,8 @@
-
+import 'package:ZeeSpot/presentation/screens/pages/registration_page.dart';
 import 'package:ZeeSpot/presentation/utils/constants.dart';
 import 'package:flutter/material.dart';
 
-class UserRegistration extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() => _UserRegistrationState();
-}
-
-class _UserRegistrationState extends State<UserRegistration> {
+class UserRegistration extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -15,7 +10,12 @@ class _UserRegistrationState extends State<UserRegistration> {
       height: 61,
       margin: EdgeInsets.fromLTRB(40, 35, 40, 0),
       child: FloatingActionButton.extended(
-        onPressed: () {},
+        elevation: 0,
+        onPressed: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) {
+            return RegistrationPage();
+          }));
+        },
         label: Text('Зарегистрироваться',
             style: Theme
                 .of(context)
