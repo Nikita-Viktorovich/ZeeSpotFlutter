@@ -28,4 +28,10 @@
 ![image](https://user-images.githubusercontent.com/78436831/132257928-09ee945d-8cef-4d94-8ee6-cb704398842d.png)
 
 На странице регистрации добавлены кнопки входа через соцсети, остается добавить поля ввода
+# 10.09.21
 
+![image](https://user-images.githubusercontent.com/78436831/132910714-89e62707-dda4-4f0e-a252-dca102a4fbda.png)
+
+![image](https://user-images.githubusercontent.com/78436831/132910767-cdebcd3a-cac8-4971-8294-0de552b4de20.png)
+
+Изсправление тени у кнопок на стартовом экране, и добавление полей для ввода информации при регистрации
