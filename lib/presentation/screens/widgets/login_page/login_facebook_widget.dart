@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class LoginFacebookWidget extends StatelessWidget {
   @override
@@ -31,10 +32,10 @@ class LoginFacebookWidget extends StatelessWidget {
         backgroundColor: Theme
             .of(context)
             .backgroundColor,
-        icon: Image.asset(
-          'assets/icons/Facebook.png',
-          height: 35,
+        icon: SvgPicture.asset(
+          'assets/icons/Facebook.svg',
           width: 35,
+          height: 35,
         ),
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(20.0))

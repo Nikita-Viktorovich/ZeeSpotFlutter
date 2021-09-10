@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
-class LoginAppleWidget extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() => _LoginAppleState();
-}
+class LoginAppleWidget extends StatelessWidget {
 
-class _LoginAppleState extends State<LoginAppleWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
       width: 96,
       height: 61,
-      margin: EdgeInsets.fromLTRB(26, 30, 0, 0),
+      margin: EdgeInsets.fromLTRB(26, 30, 35, 0),
       child: FloatingActionButton(
         heroTag: "next6",
         onPressed: () {},
@@ -21,8 +18,8 @@ class _LoginAppleState extends State<LoginAppleWidget> {
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(20.0))
         ),
-        child: Image.asset(
-          'assets/icons/Apple.png',
+        child: SvgPicture.asset(
+          'assets/icons/Apple.svg',
           height: 35,
           width: 35,
           fit: BoxFit.fill,

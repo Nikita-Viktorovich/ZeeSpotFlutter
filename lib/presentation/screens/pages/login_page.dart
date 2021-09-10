@@ -4,6 +4,7 @@ import 'package:ZeeSpot/presentation/screens/widgets/login_page/login_google_wid
 import 'package:ZeeSpot/presentation/screens/widgets/login_page/login_widget.dart';
 import 'package:ZeeSpot/presentation/screens/widgets/login_page/user_registration.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -30,11 +31,11 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.fromLTRB(0, 55, 0, 30),
+                margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
                 alignment: Alignment.center,
-                child: Image.asset('assets/images/MotherNature.png'),
-                width: 310,
-                height: 240,
+                width: 330,
+                height: 330,
+                child: SvgPicture.asset('assets/images/MotherNature.svg', height: 406, width: 406,),
               ),
               //LoginGoogleWidget(),
               LoginGoogleWidget(),

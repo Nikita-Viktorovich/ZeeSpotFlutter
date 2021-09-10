@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
-class LoginFacebookWidget extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() => _LoginFacebookState();
-}
-
-class _LoginFacebookState extends State<LoginFacebookWidget> {
+class LoginFacebookWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -19,8 +15,8 @@ class _LoginFacebookState extends State<LoginFacebookWidget> {
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(20.0))
         ),
-        child: Image.asset(
-          'assets/icons/Facebook.png',
+        child: SvgPicture.asset(
+          'assets/icons/Facebook.svg',
           height: 35,
           width: 35,
         ),

@@ -29,7 +29,7 @@ class MyButton extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset('assets/icons/Google.png', height: 30,),
+              Image.asset('assets/icons/Google.svg', height: 30,),
               SizedBox(width: 5,),
               Text(
                 'Продолжить через Google',

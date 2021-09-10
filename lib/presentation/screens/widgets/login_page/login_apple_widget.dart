@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class LoginAppleWidget extends StatelessWidget {
   @override
@@ -31,10 +32,10 @@ class LoginAppleWidget extends StatelessWidget {
         backgroundColor: Theme
             .of(context)
             .backgroundColor,
-        icon: Image.asset(
-          'assets/icons/Apple.png',
-          height: 35,
+        icon: SvgPicture.asset(
+          'assets/icons/Apple.svg',
           width: 35,
+          height: 35,
           fit: BoxFit.fill,
         ),
         shape: RoundedRectangleBorder(

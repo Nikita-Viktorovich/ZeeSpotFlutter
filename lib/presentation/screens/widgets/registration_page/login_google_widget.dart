@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
-class LoginGoogleWidget extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() => _LoginGoogleState();
-}
-
-class _LoginGoogleState extends State<LoginGoogleWidget> {
+class LoginGoogleWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -22,8 +18,8 @@ class _LoginGoogleState extends State<LoginGoogleWidget> {
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(20.0))
         ),
-        child: Image.asset(
-          'assets/icons/Google.png',
+        child: SvgPicture.asset(
+          'assets/icons/Google.svg',
           width: 35,
           height: 35,
         ),

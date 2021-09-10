@@ -1,12 +1,9 @@
 import 'package:ZeeSpot/presentation/utils/constants.dart';
 import 'package:flutter/material.dart';
 
-class InputNameWidget extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() => _InputNameState();
-}
+class InputEmailWidget extends StatelessWidget {
+  const InputEmailWidget({Key? key}) : super(key: key);
 
-class _InputNameState extends State<InputNameWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -19,11 +16,11 @@ class _InputNameState extends State<InputNameWidget> {
           border: OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(20.0)),
           ),
-          hintText: "Введите имя",
+          hintText: "zeespot@gmail.com",
           hintStyle: Theme.of(context)
               .textTheme
               .headline4!
-              .copyWith(fontFamily: futuraLtBt, color: kForegroundGreyColor),
+              .copyWith(color: kForegroundGreyColor),
         ),
       ),
     );

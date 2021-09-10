@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class LoginGoogleWidget extends StatelessWidget {
   @override
@@ -32,8 +33,8 @@ class LoginGoogleWidget extends StatelessWidget {
         backgroundColor: Theme
             .of(context)
             .backgroundColor,
-        icon: Image.asset(
-          'assets/icons/Google.png',
+        icon: SvgPicture.asset(
+          'assets/icons/Google.svg',
           width: 35,
           height: 35,
         ),

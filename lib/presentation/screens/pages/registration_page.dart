@@ -1,11 +1,15 @@
-import 'package:ZeeSpot/presentation/screens/widgets/registration_page/input_name.dart';
+import 'package:ZeeSpot/presentation/screens/widgets/login_page/login_widget.dart';
+import 'package:ZeeSpot/presentation/screens/widgets/login_page/user_registration.dart';
+import 'package:ZeeSpot/presentation/screens/widgets/registration_page/create_account_button.dart';
+import 'package:ZeeSpot/presentation/screens/widgets/registration_page/input_email_widget.dart';
+import 'package:ZeeSpot/presentation/screens/widgets/registration_page/input_name_widget.dart';
+import 'package:ZeeSpot/presentation/screens/widgets/registration_page/input_password_widget.dart';
 import 'package:ZeeSpot/presentation/screens/widgets/registration_page/login_apple_widget.dart';
 import 'package:ZeeSpot/presentation/screens/widgets/registration_page/login_facebook_widget.dart';
 import 'package:ZeeSpot/presentation/screens/widgets/registration_page/login_google_widget.dart';
 import 'package:ZeeSpot/presentation/utils/constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import 'login_page.dart';
 
 class RegistrationPage extends StatelessWidget {
@@ -22,7 +26,7 @@ class RegistrationPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
-                    margin: EdgeInsets.fromLTRB(23, 70, 0, 0),
+                    margin: EdgeInsets.fromLTRB(25, 70, 0, 0),
                     child: IconButton(
                       onPressed: () {
                         Navigator.push(context,
@@ -31,11 +35,10 @@ class RegistrationPage extends StatelessWidget {
                         }));
                       },
                       icon: Icon(Icons.arrow_back_ios),
-
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.fromLTRB(50, 70, 0, 0),
+                    margin: EdgeInsets.fromLTRB(45, 70, 0, 0),
                     height: 39,
                     width: 202,
                     child: Text(
@@ -78,6 +81,31 @@ class RegistrationPage extends StatelessWidget {
                 ),
               ),
               InputNameWidget(),
+              Container(
+                alignment: Alignment.centerLeft,
+                margin: EdgeInsets.fromLTRB(35, 30, 0, 0),
+                child: Text(
+                  "Email",
+                  style: Theme.of(context)
+                      .textTheme
+                      .headline4,
+                ),
+              ),
+              InputEmailWidget(),
+              Container(
+                alignment: Alignment.centerLeft,
+                margin: EdgeInsets.fromLTRB(35, 30, 0, 0),
+                child: Text(
+                  "Пароль",
+                  style: Theme.of(context)
+                      .textTheme
+                      .headline4!
+                      .copyWith(fontFamily: futuraLtBt),
+                ),
+              ),
+              InputPasswordWidget(),
+              CreateAccountButton(),
+              LoginWidget(),
             ],
           ),
         ));
