@@ -18,3 +18,6 @@ const String futuraLtBt = "Futura Lt BT";
 
 final Color kForegroundColor = Color(0xFFF1EAD7);
 final Color kForegroundGreyColor = Color.fromRGBO(0, 0, 0, 0.5);
+
+final double lenStart = 25.0;
+final double heightStart = 65.0;

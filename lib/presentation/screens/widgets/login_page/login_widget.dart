@@ -1,3 +1,4 @@
+import 'package:ZeeSpot/presentation/screens/pages/login_account_page.dart';
 import 'package:ZeeSpot/presentation/utils/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,11 @@ class LoginWidget extends StatelessWidget {
                     .copyWith(color: kForegroundGreyColor)),
             SizedBox(width: 10.0),
             TextButton(
-              onPressed: () {},
+              onPressed: () async {
+                await Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return LoginAccountPage();
+                }));
+              },
               child: Text(
                 "Войти",
                 style: Theme

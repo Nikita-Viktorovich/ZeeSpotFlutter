@@ -17,5 +17,6 @@ final kLightTheme = ThemeData.light().copyWith(
         fontFamily: futuraHvBt,
         color: Colors.black,
         fontSize: 35.0,
+        fontWeight: FontWeight.bold,
       ),
     ));

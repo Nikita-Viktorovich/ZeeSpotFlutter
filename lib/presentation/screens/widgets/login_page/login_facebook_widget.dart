@@ -4,42 +4,39 @@ import 'package:flutter_svg/svg.dart';
 class LoginFacebookWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 335,
-      height: 61,
-      margin: EdgeInsets.fromLTRB(40, 20, 40, 0),
-      decoration: BoxDecoration(
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.15),
-            spreadRadius: 0,
-            blurRadius: 24,
-            offset: Offset(0, 8), // changes position of shadow
-          ),
-        ],
-      ),
-      child: FloatingActionButton.extended(
-        elevation: 0,
-        heroTag: "next2",
-        onPressed: () {},
-        label: Text(
-          'Продолжить через Facebook',
-          style: Theme
-              .of(context)
-              .textTheme
-              .headline4,
+    return GestureDetector(
+      behavior: HitTestBehavior.opaque,
+      onTap: () {},
+      child: Container(
+        height: 61,
+        padding: EdgeInsets.only(left: 44),
+        margin: EdgeInsets.symmetric(vertical: 0, horizontal: 40),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          color: Colors.white,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.15),
+              spreadRadius: 0,
+              blurRadius: 24,
+              offset: Offset(0, 8), // changes position of shadow
+            ),
+          ],
         ),
-        backgroundColor: Theme
-            .of(context)
-            .backgroundColor,
-        icon: SvgPicture.asset(
-          'assets/icons/Facebook.svg',
-          width: 35,
-          height: 35,
+        child: Row(
+          children: [
+            SvgPicture.asset('assets/icons/Facebook.svg',),
+            SizedBox(width: 9,),
+            Text(
+              'Продолжить через Facebook',
+              style: Theme
+                  .of(context)
+                  .textTheme
+                  .headline4,
+            ),
+          ],
         ),
-        shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(20.0))
-        ),
+
       ),
     );
   }

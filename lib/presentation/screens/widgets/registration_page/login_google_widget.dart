@@ -7,8 +7,6 @@ class LoginGoogleWidget extends StatelessWidget {
     return Container(
       width: 96,
       height: 61,
-      margin: EdgeInsets.fromLTRB(26, 30, 0, 0),
-      padding: EdgeInsets.zero,
       child: FloatingActionButton(
         heroTag: "next4",
         onPressed: () {},

@@ -1,19 +1,18 @@
+import 'package:ZeeSpot/presentation/screens/widgets/login_account_page/input_email_widget.dart';
+import 'package:ZeeSpot/presentation/screens/widgets/login_account_page/input_password_widget.dart';
+import 'package:ZeeSpot/presentation/screens/widgets/login_account_page/login_account_button.dart';
 import 'package:ZeeSpot/presentation/screens/widgets/login_page/login_widget.dart';
-import 'package:ZeeSpot/presentation/screens/widgets/login_page/user_registration.dart';
-import 'package:ZeeSpot/presentation/screens/widgets/registration_page/create_account_button.dart';
-import 'package:ZeeSpot/presentation/screens/widgets/registration_page/input_email_widget.dart';
-import 'package:ZeeSpot/presentation/screens/widgets/registration_page/input_name_widget.dart';
-import 'package:ZeeSpot/presentation/screens/widgets/registration_page/input_password_widget.dart';
 import 'package:ZeeSpot/presentation/screens/widgets/registration_page/login_apple_widget.dart';
 import 'package:ZeeSpot/presentation/screens/widgets/registration_page/login_facebook_widget.dart';
 import 'package:ZeeSpot/presentation/screens/widgets/registration_page/login_google_widget.dart';
-import 'package:ZeeSpot/presentation/screens/widgets/registration_page/repeat_password_widget.dart';
 import 'package:ZeeSpot/presentation/utils/constants.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 import 'login_page.dart';
 
-class RegistrationPage extends StatelessWidget {
+class LoginAccountPage  extends StatelessWidget {
+  const LoginAccountPage ({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,23 +26,23 @@ class RegistrationPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
-                    margin: EdgeInsets.fromLTRB(25, 65, 0, 0),
+                    padding: EdgeInsets.fromLTRB(lenStart, heightStart, 0, 0),
                     child: IconButton(
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) {
-                          return LoginPage();
-                        }));
+                              return LoginPage();
+                            }));
                       },
                       icon: Icon(Icons.arrow_back_ios),
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.fromLTRB(40, 65, 0, 0),
+                    margin: EdgeInsets.fromLTRB(88, heightStart, 0, 0),
                     height: 39,
                     width: 202,
                     child: Text(
-                      'Регистрация',
+                      'Войти',
                       style: Theme.of(context)
                           .textTheme
                           .headline1!
@@ -55,14 +54,13 @@ class RegistrationPage extends StatelessWidget {
               ),
               Container(
                 alignment: Alignment.center,
-                margin: EdgeInsets.only(top: 10),
+                margin: EdgeInsets.fromLTRB(0, 10, 0, 20),
                 child: Text(
                   "Зарегистрируйтесь через один из вариантов",
                   style: Theme.of(context).textTheme.headline4!.copyWith(
                       fontFamily: futuraLtBt, color: kForegroundGreyColor),
                 ),
               ),
-              SizedBox(height: 20,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -77,18 +75,6 @@ class RegistrationPage extends StatelessWidget {
                 alignment: Alignment.centerLeft,
                 margin: EdgeInsets.fromLTRB(35, 30, 0, 0),
                 child: Text(
-                  "Имя",
-                  style: Theme.of(context)
-                      .textTheme
-                      .headline4!
-                      .copyWith(fontFamily: futuraLtBt),
-                ),
-              ),
-              InputNameWidget(),
-              Container(
-                alignment: Alignment.centerLeft,
-                margin: EdgeInsets.fromLTRB(35, 20, 0, 0),
-                child: Text(
                   "Email",
                   style: Theme.of(context)
                       .textTheme
@@ -98,7 +84,7 @@ class RegistrationPage extends StatelessWidget {
               InputEmailWidget(),
               Container(
                 alignment: Alignment.centerLeft,
-                margin: EdgeInsets.fromLTRB(35, 20, 0, 0),
+                margin: EdgeInsets.fromLTRB(35, 30, 0, 0),
                 child: Text(
                   "Пароль",
                   style: Theme.of(context)
@@ -108,19 +94,7 @@ class RegistrationPage extends StatelessWidget {
                 ),
               ),
               InputPasswordWidget(),
-              Container(
-                alignment: Alignment.centerLeft,
-                margin: EdgeInsets.fromLTRB(35, 20, 0, 0),
-                child: Text(
-                  "Повторите пароль",
-                  style: Theme.of(context)
-                      .textTheme
-                      .headline4!
-                      .copyWith(fontFamily: futuraLtBt),
-                ),
-              ),
-              RepeatPasswordWidget(),
-              CreateAccountButton(),
+              LoginAccountButton(),
               LoginWidget(),
             ],
           ),

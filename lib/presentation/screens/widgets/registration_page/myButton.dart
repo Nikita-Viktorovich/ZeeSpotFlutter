@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class MyButton extends StatelessWidget {
   const MyButton({Key? key}) : super(key: key);
@@ -9,6 +10,7 @@ class MyButton extends StatelessWidget {
       onTap: () {
         print('tap');
       },
+
       child: Container(
         height: 61,
         margin: EdgeInsets.fromLTRB(40, 0, 40, 0),
@@ -29,7 +31,7 @@ class MyButton extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset('assets/icons/Google.svg', height: 30,),
+              SvgPicture.asset('assets/icons/Google.svg', height: 35,),
               SizedBox(width: 5,),
               Text(
                 'Продолжить через Google',
