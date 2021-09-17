@@ -35,3 +35,14 @@
 ![image](https://user-images.githubusercontent.com/78436831/132910767-cdebcd3a-cac8-4971-8294-0de552b4de20.png)
 
 Исправление тени у кнопок на стартовом экране, и добавление полей для ввода информации при регистрации
+
+# 17.09.21
+
+![image](https://user-images.githubusercontent.com/78436831/133854813-33aa59da-ed37-4035-93bf-4c1cdff75eea.png)
+
+![image](https://user-images.githubusercontent.com/78436831/133854857-bd8db05f-aed4-4a9c-b7c5-612ec6baac81.png)
+
+Исправлены отступы от иконок на кнопках входа через соцсети и добавлен экран входа в аккаунт с помощью логина и пароля
+
+
+
