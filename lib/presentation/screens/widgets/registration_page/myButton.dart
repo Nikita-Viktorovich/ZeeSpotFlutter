@@ -22,8 +22,8 @@ class MyButton extends StatelessWidget {
             BoxShadow(
               color: Colors.black.withOpacity(0.15),
               spreadRadius: 0,
-              blurRadius: 24,
-              offset: Offset(0, 8), // changes position of shadow
+              blurRadius: 5,
+              offset: Offset(0, 4), // changes position of shadow
             ),
           ],
         ),

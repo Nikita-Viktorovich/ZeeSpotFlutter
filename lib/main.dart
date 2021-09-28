@@ -23,6 +23,7 @@ class ZeeSpot extends StatelessWidget {
             title: 'ZeeSpot',
             debugShowCheckedModeBanner: false,
             home: LoginPage(),
+            //home: LoginPage(),
           ),
     );
   }

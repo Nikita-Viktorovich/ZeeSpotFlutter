@@ -27,14 +27,14 @@ class LoginPage extends StatelessWidget {
                   style: Theme.of(context).textTheme.headline1,
                 ),
               ),
-              Container(
-                margin: EdgeInsets.symmetric(vertical: 44),
-                alignment: Alignment.center,
-                child:Image.asset(
-                  'assets/images/MotherNature.png',
+              Center(
+                child: Container(
+                  margin: EdgeInsets.symmetric(vertical: 44),
+                  child: SvgPicture.asset(
+                    'assets/images/Mother_Nature.svg',
+                  ),
                 ),
               ),
-              //LoginGoogleWidget(),
               LoginGoogleWidget(),
               SizedBox(
                 height: 20,
@@ -57,4 +57,5 @@ class LoginPage extends StatelessWidget {
 * файл с константами для отуступов
 * убрать размеры контейнеров и оставить отступы
 * сочетания клавиш
+* изменить навигацию pop на пуш
 * */

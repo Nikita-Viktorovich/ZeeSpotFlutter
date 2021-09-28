@@ -29,10 +29,7 @@ class LoginAccountPage  extends StatelessWidget {
                     padding: EdgeInsets.fromLTRB(lenStart, heightStart, 0, 0),
                     child: IconButton(
                       onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) {
-                              return LoginPage();
-                            }));
+                        Navigator.pop(context);
                       },
                       icon: Icon(Icons.arrow_back_ios),
                     ),
@@ -53,27 +50,8 @@ class LoginAccountPage  extends StatelessWidget {
                 ],
               ),
               Container(
-                alignment: Alignment.center,
-                margin: EdgeInsets.fromLTRB(0, 10, 0, 20),
-                child: Text(
-                  "Зарегистрируйтесь через один из вариантов",
-                  style: Theme.of(context).textTheme.headline4!.copyWith(
-                      fontFamily: futuraLtBt, color: kForegroundGreyColor),
-                ),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  LoginFacebookWidget(),
-                  SizedBox(width: 25),
-                  LoginGoogleWidget(),
-                  SizedBox(width: 25),
-                  LoginAppleWidget(),
-                ],
-              ),
-              Container(
                 alignment: Alignment.centerLeft,
-                margin: EdgeInsets.fromLTRB(35, 30, 0, 0),
+                margin: EdgeInsets.fromLTRB(35, 40, 0, 0),
                 child: Text(
                   "Email",
                   style: Theme.of(context)
@@ -94,6 +72,17 @@ class LoginAccountPage  extends StatelessWidget {
                 ),
               ),
               InputPasswordWidget(),
+              SizedBox(height: 50,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  LoginFacebookWidget(),
+                  SizedBox(width: 25),
+                  LoginGoogleWidget(),
+                  SizedBox(width: 25),
+                  LoginAppleWidget(),
+                ],
+              ),
               LoginAccountButton(),
               LoginWidget(),
             ],

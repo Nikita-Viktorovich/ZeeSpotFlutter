@@ -9,8 +9,10 @@ class InputNameWidget extends StatelessWidget {
       height: 61,
       margin: EdgeInsets.fromLTRB(0, 5, 0, 0),
       child: TextField(
-        obscureText: true,
+        style: Theme.of(context).textTheme.headline4,
         decoration: InputDecoration(
+          fillColor: Colors.black.withOpacity(0.06),
+
           border: OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(20.0)),
           ),

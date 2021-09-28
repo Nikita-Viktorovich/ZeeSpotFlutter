@@ -12,6 +12,7 @@ class InputPasswordWidget extends StatelessWidget {
       margin: EdgeInsets.fromLTRB(0, 5, 0, 0),
       child: TextField(
         obscureText: true,
+        style: Theme.of(context).textTheme.headline4,
         decoration: InputDecoration(
           border: OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(20.0)),

@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+bool tap = false;
 
 class LoginGoogleWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
     return GestureDetector(
-      behavior: HitTestBehavior.opaque,
-      onTap: () {},
-      child: Container(
+      onTap: () {
+        print("tap");
+      },
+      child: AnimatedContainer(
         height: 61,
         padding: EdgeInsets.only(left: 44),
-        margin: EdgeInsets.symmetric(vertical: 0, horizontal: 40),
+        margin: EdgeInsets.symmetric(horizontal: 40),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           color: Colors.white,
@@ -23,6 +26,7 @@ class LoginGoogleWidget extends StatelessWidget {
             ),
           ],
         ),
+        duration: Duration(seconds: 1),
         child: Row(
             children: [
               SvgPicture.asset('assets/icons/Google.svg',),

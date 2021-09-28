@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 final kLightTheme = ThemeData.light().copyWith(
     brightness: Brightness.dark,
-    appBarTheme: ThemeData.light().appBarTheme,
     primaryColor: Color(0xFF9998CF),
     accentColor: Colors.black,
     backgroundColor: Colors.white,
@@ -12,6 +11,11 @@ final kLightTheme = ThemeData.light().copyWith(
         fontFamily: futuraBkBT,
         fontSize: 14.0,
         color: Colors.black,
+      ),
+      headline5: TextStyle(
+        fontFamily: futuraBkBT,
+        fontSize: 20.0,
+        color: kForegroundGreyColor,
       ),
       headline1: TextStyle(
         fontFamily: futuraHvBt,

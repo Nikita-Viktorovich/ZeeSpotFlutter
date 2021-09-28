@@ -1,3 +1,4 @@
+import 'package:ZeeSpot/presentation/screens/pages/home_page.dart';
 import 'package:ZeeSpot/presentation/utils/constants.dart';
 import 'package:flutter/material.dart';
 class LoginAccountButton extends StatelessWidget {
@@ -11,7 +12,11 @@ class LoginAccountButton extends StatelessWidget {
       margin: EdgeInsets.fromLTRB(0, 35, 0, 0),
       child: FloatingActionButton.extended(
         elevation: 0,
-        onPressed: () {},
+        onPressed: () async {
+          await Navigator.push(context, MaterialPageRoute(builder: (context) {
+            return HomePage();
+          }));
+        },
         label: Text('Войти',
             style: Theme.of(context)
                 .textTheme

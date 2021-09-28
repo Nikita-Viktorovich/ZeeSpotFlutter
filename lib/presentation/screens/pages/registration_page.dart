@@ -1,5 +1,4 @@
 import 'package:ZeeSpot/presentation/screens/widgets/login_page/login_widget.dart';
-import 'package:ZeeSpot/presentation/screens/widgets/login_page/user_registration.dart';
 import 'package:ZeeSpot/presentation/screens/widgets/registration_page/create_account_button.dart';
 import 'package:ZeeSpot/presentation/screens/widgets/registration_page/input_email_widget.dart';
 import 'package:ZeeSpot/presentation/screens/widgets/registration_page/input_name_widget.dart';
@@ -11,7 +10,6 @@ import 'package:ZeeSpot/presentation/screens/widgets/registration_page/repeat_pa
 import 'package:ZeeSpot/presentation/utils/constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'login_page.dart';
 
 class RegistrationPage extends StatelessWidget {
   @override
@@ -29,11 +27,9 @@ class RegistrationPage extends StatelessWidget {
                   Container(
                     margin: EdgeInsets.fromLTRB(25, 65, 0, 0),
                     child: IconButton(
+                      splashRadius: 1,
                       onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) {
-                          return LoginPage();
-                        }));
+                        Navigator.pop(context);
                       },
                       icon: Icon(Icons.arrow_back_ios),
                     ),
@@ -53,26 +49,7 @@ class RegistrationPage extends StatelessWidget {
                   //Container()
                 ],
               ),
-              Container(
-                alignment: Alignment.center,
-                margin: EdgeInsets.only(top: 10),
-                child: Text(
-                  "Зарегистрируйтесь через один из вариантов",
-                  style: Theme.of(context).textTheme.headline4!.copyWith(
-                      fontFamily: futuraLtBt, color: kForegroundGreyColor),
-                ),
-              ),
-              SizedBox(height: 20,),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  LoginFacebookWidget(),
-                  SizedBox(width: 25),
-                  LoginGoogleWidget(),
-                  SizedBox(width: 25),
-                  LoginAppleWidget(),
-                ],
-              ),
+
               Container(
                 alignment: Alignment.centerLeft,
                 margin: EdgeInsets.fromLTRB(35, 30, 0, 0),
@@ -120,6 +97,19 @@ class RegistrationPage extends StatelessWidget {
                 ),
               ),
               RepeatPasswordWidget(),
+
+              SizedBox(height: 50,),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  LoginFacebookWidget(),
+                  SizedBox(width: 25),
+                  LoginGoogleWidget(),
+                  SizedBox(width: 25),
+                  LoginAppleWidget(),
+                ],
+              ),
               CreateAccountButton(),
               LoginWidget(),
             ],
