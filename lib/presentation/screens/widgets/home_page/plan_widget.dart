@@ -1,14 +1,14 @@
 import 'package:ZeeSpot/presentation/utils/constants.dart';
 import 'package:flutter/material.dart';
 
-class PlainWidget extends StatelessWidget {
-  const PlainWidget({Key? key}) : super(key: key);
+class PlanWidget extends StatelessWidget {
+  const PlanWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.topLeft,
-      height: 166,
+      height: 160,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           color: Theme.of(context).primaryColor,
@@ -30,7 +30,7 @@ class PlainWidget extends StatelessWidget {
                       color: Color(0xFF313152),
                     )),
             SizedBox(
-              height: 15,
+              height: 5,
             ),
             Text(
               'План на сегодня!',
@@ -44,7 +44,6 @@ class PlainWidget extends StatelessWidget {
               onPressed: () {},
               icon: Icon(
                 Icons.arrow_forward,
-                size: 20,
               ),
             )
           ],

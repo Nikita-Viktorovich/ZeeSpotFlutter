@@ -1,3 +1,4 @@
+import 'package:ZeeSpot/presentation/screens/pages/home_page.dart';
 import 'package:ZeeSpot/presentation/screens/pages/login_page.dart';
 import 'package:ZeeSpot/presentation/utils/theme.dart';
 import 'package:adaptive_theme/adaptive_theme.dart';

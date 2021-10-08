@@ -26,18 +26,20 @@ class PlasticContainerWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-
-              ),
-              child:
-                  SvgPicture.asset('assets/images/plastik.svg')),
-          SizedBox(height: 8,),
+            height: 64,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.white,
+            ),
+              child: SvgPicture.asset('assets/images/butylki.svg' )),
+          SizedBox(
+            height: 8,
+          ),
           Text(
             'Пластик',
             style: Theme.of(context).textTheme.headline4!.copyWith(
-              fontWeight: FontWeight.bold,
-            ),
+                  fontWeight: FontWeight.bold,
+                ),
           ),
           Text(
             '7/20',

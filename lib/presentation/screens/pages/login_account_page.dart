@@ -16,6 +16,12 @@ class LoginAccountPage  extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(0),
+          child: AppBar(
+            backgroundColor: Colors.black,
+          ),
+        ),
         backgroundColor: Theme.of(context).backgroundColor,
         body: Container(
           alignment: Alignment.topCenter,
@@ -26,7 +32,7 @@ class LoginAccountPage  extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
-                    padding: EdgeInsets.fromLTRB(lenStart, heightStart, 0, 0),
+                    padding: EdgeInsets.fromLTRB(lenStart, 20, 0, 0),
                     child: IconButton(
                       onPressed: () {
                         Navigator.pop(context);
@@ -35,7 +41,7 @@ class LoginAccountPage  extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.fromLTRB(88, heightStart, 0, 0),
+                    margin: EdgeInsets.fromLTRB(88, 20, 0, 0),
                     height: 39,
                     width: 202,
                     child: Text(

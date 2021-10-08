@@ -8,7 +8,7 @@ class UserRegistration extends StatelessWidget {
     return Container(
       width: 335,
       height: 61,
-      margin: EdgeInsets.fromLTRB(40, 35, 40, 0),
+      margin: EdgeInsets.fromLTRB(40, 20, 40, 0),
       child: FloatingActionButton.extended(
         elevation: 0,
         onPressed: () {

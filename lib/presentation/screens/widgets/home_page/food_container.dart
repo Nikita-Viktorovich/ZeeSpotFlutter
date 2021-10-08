@@ -1,4 +1,3 @@
-
 import 'package:ZeeSpot/presentation/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -25,19 +24,15 @@ class FoodContainerWidget extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Container(
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-
-              ),
-              child:
-              SvgPicture.asset('assets/images/plastik.svg')),
-          SizedBox(height: 8,),
+          Container(child: Image.asset('assets/images/Еда.png')),
+          SizedBox(
+            height: 8,
+          ),
           Text(
             'Еда',
             style: Theme.of(context).textTheme.headline4!.copyWith(
-              fontWeight: FontWeight.bold,
-            ),
+                  fontWeight: FontWeight.bold,
+                ),
           ),
           Text(
             '10/20',

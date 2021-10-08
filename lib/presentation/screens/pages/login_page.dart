@@ -13,8 +13,14 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).backgroundColor,
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(0),
+        child: AppBar(
+          backgroundColor: Colors.black,
+        ),
+      ),
       body: Container(
-        margin: EdgeInsets.fromLTRB(0, heightStart, 0, 0),
+        margin: EdgeInsets.only(top: 20),
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
