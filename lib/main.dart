@@ -10,22 +10,14 @@ void main() {
 }
 
 class ZeeSpot extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
-    return AdaptiveTheme(
-      light: kLightTheme,
-      dark: ThemeData.dark(),
-      initial: AdaptiveThemeMode.light,
-      builder: (light, dark) =>
-          MaterialApp(
-            theme: light,
-            darkTheme: dark,
-            title: 'ZeeSpot',
-            debugShowCheckedModeBanner: false,
-            home: LoginPage(),
-            //home: LoginPage(),
-          ),
+    return MaterialApp(
+      theme: kLightTheme,
+      title: 'ZeeSpot',
+      debugShowCheckedModeBanner: false,
+      home: LoginPage(),
+      //home: LoginPage(),
     );
   }
 }

@@ -1,7 +1,8 @@
+import 'package:ZeeSpot/presentation/screens/pages/adding_challenge_page.dart';
 import 'package:ZeeSpot/presentation/utils/constants.dart';
 import 'package:flutter/material.dart';
 
-class AddChallengeWidget extends StatelessWidget{
+class AddChallengeWidget extends StatelessWidget {
   const AddChallengeWidget({Key? key}) : super(key: key);
 
   @override
@@ -23,15 +24,22 @@ class AddChallengeWidget extends StatelessWidget{
       child: FloatingActionButton.extended(
         elevation: 0,
         backgroundColor: Theme.of(context).primaryColor,
-        onPressed: () {},
+        onPressed: () {
+          showModalBottomSheet(
+              context: context,
+              useRootNavigator: true,
+              isScrollControlled: true,
+              builder: (BuildContext context) {
+                return AddChallengePage();
+              });
+        },
         label: Row(
           children: [
             Text(
               'Добавить',
-              style:
-              Theme.of(context).textTheme.headline4!.copyWith(
-                color: kForegroundDarkBlueColor,
-              ),
+              style: Theme.of(context).textTheme.headline4!.copyWith(
+                    color: kForegroundDarkBlueColor,
+                  ),
             ),
             SizedBox(
               width: 5,

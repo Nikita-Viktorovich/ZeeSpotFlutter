@@ -13,112 +13,113 @@ import 'package:flutter/material.dart';
 class RegistrationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: PreferredSize(
-          preferredSize: Size.fromHeight(0),
-          child: AppBar(
-            backgroundColor: Colors.black,
-          ),
-        ),
-        backgroundColor: Theme.of(context).backgroundColor,
-        body: Container(
-          alignment: Alignment.topCenter,
-          child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 25),
-            child: Column(
-              children: [
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Container(
-                      child: IconButton(
-                        splashRadius: 1,
-                        onPressed: () {
-                          Navigator.pop(context);
-                        },
-                        icon: Icon(Icons.arrow_back_ios),
+    return Container(
+      color: Colors.white,
+      child: SafeArea(
+        child: Scaffold(
+            backgroundColor: Theme.of(context).backgroundColor,
+            body: SingleChildScrollView(
+              child: Container(
+                alignment: Alignment.topCenter,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20),
+                  child: Column(
+                    children: [
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Container(
+                            child: IconButton(
+                              splashRadius: 1,
+                              onPressed: () {
+                                Navigator.pop(context);
+                              },
+                              icon: Icon(Icons.arrow_back_ios),
+                            ),
+                          ),
+                          SizedBox(width: 40,),
+                          Container(
+                            child: Text(
+                              'Регистрация',
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .headline1!
+                                  .copyWith(fontSize: 30),
+                            ),
+                          ),
+                          //Container()
+                        ],
                       ),
-                    ),
-                    SizedBox(width: 40,),
-                    Container(
-                      child: Text(
-                        'Регистрация',
-                        style: Theme.of(context)
-                            .textTheme
-                            .headline1!
-                            .copyWith(fontSize: 30),
+
+                      Container(
+                        alignment: Alignment.centerLeft,
+                        margin: EdgeInsets.fromLTRB(35, 30, 0, 0),
+                        child: Text(
+                          "Имя",
+                          style: Theme.of(context)
+                              .textTheme
+                              .headline4!
+                              .copyWith(fontFamily: futuraLtBt),
+                        ),
                       ),
-                    ),
-                    //Container()
-                  ],
-                ),
+                      InputNameWidget(),
+                      Container(
+                        alignment: Alignment.centerLeft,
+                        margin: EdgeInsets.fromLTRB(35, 20, 0, 0),
+                        child: Text(
+                          "Email",
+                          style: Theme.of(context)
+                              .textTheme
+                              .headline4,
+                        ),
+                      ),
+                      InputEmailWidget(),
+                      Container(
+                        alignment: Alignment.centerLeft,
+                        margin: EdgeInsets.fromLTRB(35, 20, 0, 0),
+                        child: Text(
+                          "Пароль",
+                          style: Theme.of(context)
+                              .textTheme
+                              .headline4!
+                              .copyWith(fontFamily: futuraLtBt),
+                        ),
+                      ),
+                      InputPasswordWidget(),
+                      Container(
+                        alignment: Alignment.centerLeft,
+                        margin: EdgeInsets.fromLTRB(35, 20, 0, 0),
+                        child: Text(
+                          "Повторите пароль",
+                          style: Theme.of(context)
+                              .textTheme
+                              .headline4!
+                              .copyWith(fontFamily: futuraLtBt),
+                        ),
+                      ),
+                      RepeatPasswordWidget(),
 
-                Container(
-                  alignment: Alignment.centerLeft,
-                  margin: EdgeInsets.fromLTRB(35, 30, 0, 0),
-                  child: Text(
-                    "Имя",
-                    style: Theme.of(context)
-                        .textTheme
-                        .headline4!
-                        .copyWith(fontFamily: futuraLtBt),
-                  ),
-                ),
-                InputNameWidget(),
-                Container(
-                  alignment: Alignment.centerLeft,
-                  margin: EdgeInsets.fromLTRB(35, 20, 0, 0),
-                  child: Text(
-                    "Email",
-                    style: Theme.of(context)
-                        .textTheme
-                        .headline4,
-                  ),
-                ),
-                InputEmailWidget(),
-                Container(
-                  alignment: Alignment.centerLeft,
-                  margin: EdgeInsets.fromLTRB(35, 20, 0, 0),
-                  child: Text(
-                    "Пароль",
-                    style: Theme.of(context)
-                        .textTheme
-                        .headline4!
-                        .copyWith(fontFamily: futuraLtBt),
-                  ),
-                ),
-                InputPasswordWidget(),
-                Container(
-                  alignment: Alignment.centerLeft,
-                  margin: EdgeInsets.fromLTRB(35, 20, 0, 0),
-                  child: Text(
-                    "Повторите пароль",
-                    style: Theme.of(context)
-                        .textTheme
-                        .headline4!
-                        .copyWith(fontFamily: futuraLtBt),
-                  ),
-                ),
-                RepeatPasswordWidget(),
+                      SizedBox(height: 50,),
 
-                SizedBox(height: 50,),
-
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    LoginFacebookWidget(),
-                    SizedBox(width: 25),
-                    LoginGoogleWidget(),
-                    SizedBox(width: 25),
-                    LoginAppleWidget(),
-                  ],
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          LoginFacebookWidget(),
+                          SizedBox(width: 25),
+                          LoginGoogleWidget(),
+                          SizedBox(width: 25),
+                          LoginAppleWidget(),
+                        ],
+                      ),
+                      CreateAccountButton(),
+                      LoginWidget(),
+                    ],
+                  ),
                 ),
-                CreateAccountButton(),
-                LoginWidget(),
-              ],
-            ),
-          ),
-        ));
+              ),
+            )),
+      ),
+    );
   }
 }

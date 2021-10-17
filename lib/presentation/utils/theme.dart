@@ -2,10 +2,8 @@ import 'package:ZeeSpot/presentation/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 final kLightTheme = ThemeData.light().copyWith(
-
-    brightness: Brightness.dark,
+    brightness: Brightness.light,
     primaryColor: Color(0xFF9998CF),
-    accentColor: Colors.black,
     backgroundColor: Colors.white,
     textTheme: TextTheme(
       headline4: TextStyle(
@@ -24,4 +22,4 @@ final kLightTheme = ThemeData.light().copyWith(
         fontSize: 35.0,
         fontWeight: FontWeight.bold,
       ),
-    ));
+    ), colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Colors.black));

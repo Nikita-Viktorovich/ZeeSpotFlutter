@@ -12,7 +12,7 @@ class InputNameWidget extends StatelessWidget {
         style: Theme.of(context).textTheme.headline4,
         decoration: InputDecoration(
           fillColor: Colors.black.withOpacity(0.06),
-
+          //filled: true,
           border: OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(20.0)),
           ),

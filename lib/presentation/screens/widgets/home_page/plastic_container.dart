@@ -25,13 +25,7 @@ class PlasticContainerWidget extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Container(
-            height: 64,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.white,
-            ),
-              child: SvgPicture.asset('assets/images/butylki.svg' )),
+          Image.asset("assets/images/Пластик.png"),
           SizedBox(
             height: 8,
           ),

@@ -24,6 +24,8 @@ final Color kBackgroundPlastik = Color(0xFFD0ECF5);
 final Color kBackgroundWater = Color(0xFFE9E7F7);
 final Color kBackgroundFood = Color(0xFFE2D7BE);
 final Color kBackgroundClothing = Color(0xFFF8E0DC);
+final Color kBackgroundAddedChallenge = Color(0xFFF6F7FB);
+
 
 final double lenStart = 25.0;
 final double heightStart = 65.0;
