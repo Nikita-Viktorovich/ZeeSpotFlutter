@@ -6,7 +6,7 @@ class UserRegistration extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 335,
+      width: 400,
       height: 61,
       margin: EdgeInsets.fromLTRB(40, 20, 40, 0),
       child: FloatingActionButton.extended(
@@ -20,7 +20,7 @@ class UserRegistration extends StatelessWidget {
             style: Theme
                 .of(context)
                 .textTheme
-                .headline4!
+                .headlineMedium!
                 .copyWith(fontFamily: futuraLtBt, color: kForegroundColor)),
         backgroundColor: Theme
             .of(context)

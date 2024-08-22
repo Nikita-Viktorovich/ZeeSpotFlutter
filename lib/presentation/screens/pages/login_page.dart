@@ -17,7 +17,7 @@ class LoginPage extends StatelessWidget {
       child: SafeArea(
         child: Scaffold(
 
-          backgroundColor: Theme.of(context).backgroundColor,
+          backgroundColor: Theme.of(context).scaffoldBackgroundColor,
           /*appBar: PreferredSize(
             preferredSize: Size.fromHeight(0),
             child: AppBar(
@@ -36,7 +36,7 @@ class LoginPage extends StatelessWidget {
                     height: 42,
                     child: Text(
                       'ZeeSpot',
-                      style: Theme.of(context).textTheme.headline1,
+                      style: Theme.of(context).textTheme.headlineLarge,
                     ),
                   ),
                   Center(

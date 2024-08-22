@@ -11,7 +11,7 @@ class RepeatPasswordWidget extends StatelessWidget {
       margin: EdgeInsets.fromLTRB(0, 5, 0, 0),
       child: TextField(
         obscureText: true,
-        style: Theme.of(context).textTheme.headline4,
+        style: Theme.of(context).textTheme.headlineMedium,
 
         decoration: InputDecoration(
           border: OutlineInputBorder(
@@ -20,7 +20,7 @@ class RepeatPasswordWidget extends StatelessWidget {
           hintText: "Введите еще раз пароль",
           hintStyle: Theme.of(context)
               .textTheme
-              .headline4!
+              .headlineMedium!
               .copyWith(fontFamily: futuraLtBt, color: kForegroundGreyColor),
         ),
       ),

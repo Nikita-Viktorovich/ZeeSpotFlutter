@@ -26,7 +26,7 @@ class PlanWidget extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text('Советы',
-                style: Theme.of(context).textTheme.headline5!.copyWith(
+                style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                       color: Color(0xFF313152),
                     )),
             SizedBox(
@@ -34,7 +34,7 @@ class PlanWidget extends StatelessWidget {
             ),
             Text(
               'План на сегодня!',
-              style: Theme.of(context).textTheme.headline1!.copyWith(
+              style: Theme.of(context).textTheme.headlineLarge!.copyWith(
                     fontFamily: futuraBkBT,
                     color: Colors.white,
                     fontSize: 30,

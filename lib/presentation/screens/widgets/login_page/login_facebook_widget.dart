@@ -9,7 +9,7 @@ class LoginFacebookWidget extends StatelessWidget {
       onTap: () {},
       child: Container(
         height: 61,
-        padding: EdgeInsets.only(left: 44),
+        padding: EdgeInsets.only(left: 20),
         margin: EdgeInsets.symmetric(vertical: 0, horizontal: 40),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
@@ -32,7 +32,7 @@ class LoginFacebookWidget extends StatelessWidget {
               style: Theme
                   .of(context)
                   .textTheme
-                  .headline4,
+                  .headlineMedium,
             ),
           ],
         ),

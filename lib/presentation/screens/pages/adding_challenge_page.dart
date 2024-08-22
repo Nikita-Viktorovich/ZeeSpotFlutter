@@ -33,7 +33,7 @@ class AddChallengePage extends StatelessWidget {
             ),
             Text(
               'Добавить новый челлендж',
-              style: Theme.of(context).textTheme.headline1!.copyWith(
+              style: Theme.of(context).textTheme.headlineLarge!.copyWith(
                     fontSize: 18.0,
                   ),
             ),
@@ -43,7 +43,7 @@ class AddChallengePage extends StatelessWidget {
             Text(
               'Будь продуктивным сегодня,\nсоздай экологичный мир вокруг себя!',
               textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.headline4!.copyWith(
+              style: Theme.of(context).textTheme.headlineMedium!.copyWith(
                     color: Colors.black.withOpacity(0.5),
                   ),
             ),
@@ -60,7 +60,7 @@ class AddChallengePage extends StatelessWidget {
                     borderRadius: BorderRadius.all(Radius.circular(25.0)),
                   ),
                   hintText: 'Введите текст...',
-                  hintStyle: Theme.of(context).textTheme.headline4,
+                  hintStyle: Theme.of(context).textTheme.headlineMedium,
                   suffixIcon: Icon(Icons.arrow_forward_ios_rounded),
                 ),
               ),

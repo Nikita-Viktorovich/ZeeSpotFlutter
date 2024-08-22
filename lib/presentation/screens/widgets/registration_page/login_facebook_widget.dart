@@ -23,7 +23,7 @@ class LoginFacebookWidget extends StatelessWidget {
         elevation: 0,
         heroTag: "next5",
         onPressed: () {},
-        backgroundColor: Theme.of(context).backgroundColor,
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(20.0))
         ),

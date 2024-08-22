@@ -20,7 +20,7 @@ class InputPasswordWidget extends StatelessWidget {
           hintText: "Введите пароль",
           hintStyle: Theme.of(context)
               .textTheme
-              .headline4!
+              .headlineMedium!
               .copyWith(fontFamily: futuraLtBt, color: kForegroundGreyColor),
         ),
       ),

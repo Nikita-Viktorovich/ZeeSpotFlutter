@@ -6,7 +6,7 @@ class LoginWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 200,
+      width: 400,
       height: 35,
       margin: EdgeInsets.fromLTRB(0, 5, 0, 0),
       child: Row(
@@ -16,7 +16,7 @@ class LoginWidget extends StatelessWidget {
                 style: Theme
                     .of(context)
                     .textTheme
-                    .headline4!
+                    .headlineMedium!
                     .copyWith(color: kForegroundGreyColor)),
             SizedBox(width: 10.0),
             TextButton(
@@ -30,7 +30,7 @@ class LoginWidget extends StatelessWidget {
                 style: Theme
                     .of(context)
                     .textTheme
-                    .headline4!
+                    .headlineMedium!
                     .copyWith(fontFamily: futuraLtBt),
               ),
             ),

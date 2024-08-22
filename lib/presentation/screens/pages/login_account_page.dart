@@ -19,7 +19,7 @@ class LoginAccountPage  extends StatelessWidget {
       color: Colors.white,
       child: SafeArea(
         child: Scaffold(
-            backgroundColor: Theme.of(context).backgroundColor,
+            backgroundColor: Theme.of(context).scaffoldBackgroundColor,
             body: SingleChildScrollView(
               child: Container(
                 alignment: Alignment.topCenter,
@@ -46,7 +46,7 @@ class LoginAccountPage  extends StatelessWidget {
                             'Войти',
                             style: Theme.of(context)
                                 .textTheme
-                                .headline1!
+                                .headlineLarge!
                                 .copyWith(fontSize: 30),
                           ),
                         ),
@@ -60,7 +60,7 @@ class LoginAccountPage  extends StatelessWidget {
                         "Email",
                         style: Theme.of(context)
                             .textTheme
-                            .headline4,
+                            .headlineMedium,
                       ),
                     ),
                     InputEmailWidget(),
@@ -71,7 +71,7 @@ class LoginAccountPage  extends StatelessWidget {
                         "Пароль",
                         style: Theme.of(context)
                             .textTheme
-                            .headline4!
+                            .headlineMedium!
                             .copyWith(fontFamily: futuraLtBt),
                       ),
                     ),

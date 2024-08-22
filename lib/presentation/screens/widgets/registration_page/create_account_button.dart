@@ -16,7 +16,7 @@ class CreateAccountButton extends StatelessWidget {
         label: Text('Создать аккаунт',
             style: Theme.of(context)
                 .textTheme
-                .headline4!
+                .headlineMedium!
                 .copyWith(fontFamily: futuraLtBt, color: kForegroundColor, fontSize: 16)),
         backgroundColor: Theme.of(context).primaryColor,
         shape: RoundedRectangleBorder(

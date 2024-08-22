@@ -1,8 +1,7 @@
 import 'package:ZeeSpot/presentation/screens/pages/home_page.dart';
-import 'package:ZeeSpot/presentation/screens/pages/login_page.dart';
+// import 'package:ZeeSpot/presentation/screens/pages/login_page.dart';
+// import 'package:ZeeSpot/presentation/screens/pages/account_page.dart';
 import 'package:ZeeSpot/presentation/utils/theme.dart';
-import 'package:adaptive_theme/adaptive_theme.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,8 +15,7 @@ class ZeeSpot extends StatelessWidget {
       theme: kLightTheme,
       title: 'ZeeSpot',
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
-      //home: LoginPage(),
+      home: HomePage(),
     );
   }
 }

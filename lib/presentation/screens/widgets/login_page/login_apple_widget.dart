@@ -9,7 +9,7 @@ class LoginAppleWidget extends StatelessWidget {
       onTap: () {},
       child: Container(
         height: 61,
-        padding: EdgeInsets.only(left: 44),
+        padding: EdgeInsets.only(left: 20),
         margin: EdgeInsets.symmetric(vertical: 0, horizontal: 40),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
@@ -33,7 +33,7 @@ class LoginAppleWidget extends StatelessWidget {
             ),
             Text(
               'Продолжить через Apple',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
         ),

@@ -11,7 +11,7 @@ class InputEmailWidget extends StatelessWidget {
       height: 61,
       margin: EdgeInsets.fromLTRB(0, 5, 0, 0),
       child: TextField(
-        style: Theme.of(context).textTheme.headline4,
+        style: Theme.of(context).textTheme.headlineMedium,
         decoration: InputDecoration(
           border: OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(20.0)),
@@ -19,7 +19,7 @@ class InputEmailWidget extends StatelessWidget {
           hintText: "zeespot@gmail.com",
           hintStyle: Theme.of(context)
               .textTheme
-              .headline4!
+              .headlineMedium!
               .copyWith(color: kForegroundGreyColor),
         ),
       ),

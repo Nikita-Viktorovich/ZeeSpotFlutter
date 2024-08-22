@@ -17,7 +17,7 @@ class RegistrationPage extends StatelessWidget {
       color: Colors.white,
       child: SafeArea(
         child: Scaffold(
-            backgroundColor: Theme.of(context).backgroundColor,
+            backgroundColor: Theme.of(context).scaffoldBackgroundColor,
             body: SingleChildScrollView(
               child: Container(
                 alignment: Alignment.topCenter,
@@ -44,7 +44,7 @@ class RegistrationPage extends StatelessWidget {
                               'Регистрация',
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline1!
+                                  .headlineLarge!
                                   .copyWith(fontSize: 30),
                             ),
                           ),
@@ -59,7 +59,7 @@ class RegistrationPage extends StatelessWidget {
                           "Имя",
                           style: Theme.of(context)
                               .textTheme
-                              .headline4!
+                              .headlineMedium!
                               .copyWith(fontFamily: futuraLtBt),
                         ),
                       ),
@@ -71,7 +71,7 @@ class RegistrationPage extends StatelessWidget {
                           "Email",
                           style: Theme.of(context)
                               .textTheme
-                              .headline4,
+                              .headlineMedium,
                         ),
                       ),
                       InputEmailWidget(),
@@ -82,7 +82,7 @@ class RegistrationPage extends StatelessWidget {
                           "Пароль",
                           style: Theme.of(context)
                               .textTheme
-                              .headline4!
+                              .headlineMedium!
                               .copyWith(fontFamily: futuraLtBt),
                         ),
                       ),
@@ -94,7 +94,7 @@ class RegistrationPage extends StatelessWidget {
                           "Повторите пароль",
                           style: Theme.of(context)
                               .textTheme
-                              .headline4!
+                              .headlineMedium!
                               .copyWith(fontFamily: futuraLtBt),
                         ),
                       ),

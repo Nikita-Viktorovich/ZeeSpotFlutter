@@ -30,13 +30,13 @@ class FoodContainerWidget extends StatelessWidget {
           ),
           Text(
             'Еда',
-            style: Theme.of(context).textTheme.headline4!.copyWith(
+            style: Theme.of(context).textTheme.headlineMedium!.copyWith(
                   fontWeight: FontWeight.bold,
                 ),
           ),
           Text(
             '10/20',
-            style: Theme.of(context).textTheme.headline4,
+            style: Theme.of(context).textTheme.headlineMedium,
           ),
         ],
       ),

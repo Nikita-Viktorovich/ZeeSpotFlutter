@@ -30,13 +30,13 @@ class ClothingContainerWidget extends StatelessWidget {
           ),
           Text(
             'Одежда',
-            style: Theme.of(context).textTheme.headline4!.copyWith(
+            style: Theme.of(context).textTheme.headlineMedium!.copyWith(
                   fontWeight: FontWeight.bold,
                 ),
           ),
           Text(
             '13/20',
-            style: Theme.of(context).textTheme.headline4,
+            style: Theme.of(context).textTheme.headlineMedium,
           ),
         ],
       ),

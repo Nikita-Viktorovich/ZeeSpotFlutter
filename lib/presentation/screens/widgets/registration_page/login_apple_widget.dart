@@ -26,7 +26,7 @@ class LoginAppleWidget extends StatelessWidget {
         onPressed: () {},
         backgroundColor: Theme
             .of(context)
-            .backgroundColor,
+            .scaffoldBackgroundColor,
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(20.0))
         ),

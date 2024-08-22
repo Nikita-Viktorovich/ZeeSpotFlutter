@@ -9,7 +9,7 @@ class InputNameWidget extends StatelessWidget {
       height: 61,
       margin: EdgeInsets.fromLTRB(0, 5, 0, 0),
       child: TextField(
-        style: Theme.of(context).textTheme.headline4,
+        style: Theme.of(context).textTheme.headlineMedium,
         decoration: InputDecoration(
           fillColor: Colors.black.withOpacity(0.06),
           //filled: true,
@@ -19,7 +19,7 @@ class InputNameWidget extends StatelessWidget {
           hintText: "Введите имя",
           hintStyle: Theme.of(context)
               .textTheme
-              .headline4!
+              .headlineMedium!
               .copyWith(fontFamily: futuraLtBt, color: kForegroundGreyColor),
         ),
       ),

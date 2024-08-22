@@ -19,7 +19,7 @@ class InputEmailWidget extends StatelessWidget {
           hintText: "Введите Email",
           hintStyle: Theme.of(context)
               .textTheme
-              .headline4!
+              .headlineMedium!
               .copyWith(color: kForegroundGreyColor),
         ),
       ),

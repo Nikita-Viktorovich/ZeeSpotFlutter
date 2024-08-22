@@ -12,7 +12,7 @@ class LoginGoogleWidget extends StatelessWidget {
       },
       child: AnimatedContainer(
         height: 61,
-        padding: EdgeInsets.only(left: 44),
+        padding: EdgeInsets.only(left: 20),
         margin: EdgeInsets.symmetric(horizontal: 40),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
@@ -36,7 +36,7 @@ class LoginGoogleWidget extends StatelessWidget {
                 style: Theme
                     .of(context)
                     .textTheme
-                    .headline4,
+                    .headlineMedium,
               ),
             ],
           ),
